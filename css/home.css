@@ -65,13 +65,14 @@ header{
     width: 250px;
     padding: 17px 0;
     color: #fff;
-    background-color: #c9aa7b;
+    background: #c9aa7b;
     outline: none !important;
     border: none !important;
     box-shadow: none;
+    transition: .5s ease-out;
 }
 .banner-top .btn:hover{
-    background-color: #8f7856;
+    box-shadow: 0 0 10px #c9aa7b, 0 0 40px #c9aa7b, 0 0 80px #c9aa7b;
 }
 .banner-top img{
     z-index: -1;
@@ -365,14 +366,14 @@ header .menu-left{
     background-position: bottom;
 }
 .menu-cart-wrapper{
-    min-height: 640px;
     width: 480px;
     position: absolute;
     top: 100%;
     right: 0;
     border-top: 2px solid #c9aa7b;
     padding: 50px;
-    background: #fff
+    background: #fff;
+    display: none;
 }
 .cart-product-img{
     width: 60px;
@@ -418,7 +419,7 @@ header .menu-left{
     font-size: 1.3rem;
 }
 .cart-btn{
-    padding-top: 15px;
+    padding-top: 25px;
 }
 .cart-btn a{
     font-family: open-san-bold;
@@ -429,9 +430,369 @@ header .menu-left{
     outline: none !important;
     box-shadow: none !important;
 }
-.cart-btn a:focus,
 .cart-btn a:active,
-.cart-btn a:hover{
+.cart-btn a:hover,
+.cart-btn a:focus{
     background: #c9aa7b !important;
     color: #fff !important;
+}
+.menu-cart .fa-shopping-basket:hover{
+    color: #000
+}
+header .fa-search:hover{
+    color: #000
+}
+footer{
+     background: #242424;
+     font-family: open-san-regular;
+     font-size: .9rem;
+}
+.footer-top{
+    padding: 100px 0;
+}
+.footer-top .first-col-p{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    color: #959595;
+    font-size: .9rem;
+}
+.footer-top a img{
+    margin-top: -25px;
+}
+.footer-top h2{
+    margin-bottom: 35px;
+    color: #fff;
+    font-family: playfair-display-bold;
+    font-size: 1.4rem;
+}
+.footer-social{
+    color: #fff;
+}
+.footer-social i{
+    background: #c9aa7b;
+    border-radius: 50%;
+}
+.footer-social i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin-right: 10px
+}
+.footer-contact p{
+    color: #959595;
+}
+.footer-contact span{
+    color: #c9aa7b
+}
+.footer-contact i{
+    color: #c9aa7b;
+    padding-right: 8px
+}
+.footer-post{
+    color: #c9aa7b
+}
+.footer-post p{
+    cursor: pointer;
+}
+.footer-post p:first-child{
+    margin-bottom: 10px;
+}
+.footer-post p:last-child{
+    color: #959595;
+    font-size: .7rem
+}
+.footer-insta-img img{
+    width: 100%;
+    height: 100%;
+}
+.footer-insta-img div{
+    margin-right: -15px;
+    margin-bottom: 15px;
+}
+.footer-bot-wrapper{
+    background: #1a1a1a;
+    padding: 30px 0;
+}
+.footer-bot a{
+    color: #4c4c4c;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: .7rem;
+    font-family: open-san-regular;
+    transition: .5s ease-out;
+}
+.footer-bot a:hover{
+    color: #c9aa7b
+}
+
+.main_home .introduce{
+    background: #c9aa7b;
+}
+.main_home .introduce1{
+    padding: 70px;
+}
+.main_home .introduce .img_introduce img{
+    box-shadow: 50px 50px #d5bc93;
+}
+.main_home .introduce .text_introduce p:nth-child(1){
+    font-weight: bold;
+    font-size: 250%;
+}
+.main_home .introduce .text_introduce p:nth-child(2){
+    font-size: 60%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.main_home .introduce .text_introduce p:nth-child(3){
+    font-style: italic;
+    font-size: 100%;
+}
+.main_home .introduce .text_introduce p:nth-child(4){
+    font-size: 100%;
+}
+.main_home .introduce .text_introduce .introduce_button{
+    border: none;
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-weight: bold;
+    color: #c9aa7b;
+}
+.main_home .bakery_produce {
+    padding: 50px;
+}
+.main_home .bakery_produce .bakery_produce_title{
+    text-align: center;
+}
+.main_home .bakery_produce .bakery_produce_title p:nth-child(1){
+    font-weight: bold;
+    font-size: 250%;
+}
+.main_home .bakery_produce .bakery_produce_title p:nth-child(2){
+    font-size: 60%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.main_home .bakery_produce .bakery_produce_title p:nth-child(3){
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.main_home .bakery_produce .bakery_produce_text .text_box .p1{
+    font-weight: bold;
+    font-size: 140%;
+}
+.main_home .bakery_produce .bakery_produce_text .text_box .p2{
+    font-style: italic;
+    color: #c9aa7b;
+    font-weight: bold;
+}
+.main_home .ofer{
+    background: #d5bc93;
+}
+.main_home .ofer .ofer1{
+    padding: 80px;
+}
+.main_home .ofer .ofer_p{
+    font-weight: bold;
+    font-size: 250%;
+}
+.main_home .ofer .ofer_button{
+    border: none;
+    padding: 15px 50px;
+    background: #c9aa7b;
+    font-weight: bold;
+    color: #fff;
+}
+.main_home .our_product .our_product_left{
+    background: #000;
+    color: #fff;
+}
+.main_home .our_product .our_product_left1{
+    margin-top: 30%;
+}
+.main_home .our_product .our_product_left .p1{
+    font-weight: bold;
+    font-size: 250%;
+}
+.main_home .our_product .our_product_left .p2{
+    font-size: 60%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.main_home .our_product .our_product_left .p3{
+    font-size: 100%;
+}
+.main_home .our_product .our_product_left button{
+    border: none;
+    padding: 15px 50px;
+    background: #fff;
+    font-weight: bold;
+    color: #c9aa7b;
+    margin-top: 30px;
+}
+.main_home .our_product .row_product{
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.main_home .our_product .our_product_right{
+    padding: 20px;
+}
+.main_home .our_product .our_product_right .p1{
+   font-weight: bold;
+    font-size: 140%;
+}
+.main_home .our_product .our_product_right .p2{
+    font-style: italic;
+    color: #c9aa7b;
+    font-weight: bold;
+}
+.main_home .our_chefs{
+    margin-top: 100px;
+}
+.main_home .our_chefs .title{
+    margin-bottom: 60px;
+}
+.main_home .our_chefs .title p:nth-child(1){
+    font-weight: bold;
+    font-size: 250%;
+}
+.main_home .our_chefs .title p:nth-child(2){
+    font-size: 60%;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.main_home .our_chefs .text .text_chefs .p1{
+    margin-top: 20px;
+    color: #c9aa7b;
+    font-weight: bold;
+    font-size: 140%;
+}
+.main_home .our_chefs .text .text_chefs img{
+    box-shadow: -10px -10px 20px #c9aa7b;
+}
+.main_home .logo{
+    padding: 50px;
+}
+.home-blog{
+    margin-top: 100px;
+    padding: 100px 0;
+}
+.home-blog-title{
+    color: #fff;
+    font-family: playfair-display-bold
+}
+.home-blog-title h1{
+    margin-bottom: 30px;
+}
+.home-blog-title p{
+    font-family: open-san-regular;
+    font-size: .8rem;
+    margin-bottom: 40px
+}
+.home-blog::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -3;
+    background: url('../images/home_blog_bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.home-blog::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background: rgba(0, 0, 0, .5);
+}
+.home-blog-top{
+    position: relative;
+}
+.home-blog-bot{
+    background: #fff;
+    padding: 30px
+}
+.home-blog-date{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: #c9aa7b
+}
+.home-blog-date p{
+    margin-bottom: 0;
+    font-family: playfair-display-bold;
+    color: #fff;
+}
+.home-blog-bot h2{
+    font-family: playfair-display-bold;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.home-blog-bot p{
+    font-family: open-san-regular;
+    color: #5e5a54;
+    font-size: .85rem;
+    margin-bottom: 40px
+}
+.home-blog-bot a{
+    background: #c9aa7b;
+    color: #fff;
+    position: relative;
+    padding: 20px 70px 20px 30px;
+}
+.home-blog-bot .fas{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.home-first-blog a{
+    border-radius: 40px;
+}
+.home-blog-bot:not(.home-first-blog) h2{
+    font-size: 1.5rem;
+}
+.home-blog-btn-fullsize{
+    background: #c9aa7b;
+    color: #fff;
+    position: relative;
+    padding: 20px 20px;
+    width: 100%;
+    border-radius: 0;
+}
+.home-blog-arrow{
+    position: absolute !important;
+    right: 0 !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    height: 66px !important;
+    line-height: 66px !important;
+    padding: 0 20px;
+    font-size: 1.2rem;
+    border-left: 1px solid #efece8 !important;
+}
+.home-last-blog{
+    margin-top: 30px;
+}
+.home-last-blog .home-blog-top{
+    width: 47%;
+}
+.home-last-blog .home-blog-bot{
+    width: 53%;
+}
+.home-last-blog-wrapper{
+    padding: 30px
+}
+.home-last-blog i{
+    padding: 0 20px !important;
 }
